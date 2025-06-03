@@ -123,7 +123,7 @@ FROM SHOWS
 GROUP BY TYPE_ID;
 ```
 
-![Content Type Distribution](1.png)
+![Content Type Distribution](images/1.png)
 
 ---
 
@@ -162,7 +162,7 @@ GROUP BY C.NAME
 ORDER BY NO_OF_SHOWS DESC;
 ```
 
-![Shows by Country](2.png)
+![Shows by Country](images/2.png)
 
 ---
 
@@ -207,7 +207,7 @@ ORDER BY NO_OF_SHOWS DESC
 LIMIT 5;
 ```
 
-![Top 5 Actors](7.png)
+![Top 5 Actors](images/7.png)
 
 ---
 
