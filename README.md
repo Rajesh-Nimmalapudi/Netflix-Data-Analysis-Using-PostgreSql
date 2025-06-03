@@ -710,17 +710,23 @@ Netflix-Data-Analysis-Using-PostgreSql/
 ├── README.md                          # Project documentation
 ├── er_diagram.png                            # Entity-Relationship diagram
 ├── data/
-│   ├── netflix_raw.csv              # Original dataset
+│   ├── netflix_raw_original.csv              # Original dataset
 │   └── netflix_cleaned.csv          # Processed dataset
+|   └──countries.csv                 #cleaned countries dataset
+|   └──casts.csv                     # cleaned cast_members
+|   └──directors.csv                  #cleaned directors  
+|
+|
 ├── sql/
-│   ├── create_tables.sql            # DDL statements
-│   ├── insert_data.sql              # Data import scripts
-│   └── business_queries.sql         # 25 analytical queries
+│   ├── database_creation.sql            # DDL statements
+│   ├── insertion_into_database.sql              # Data import scripts
+│   └── querying_new.sql             # 25 analytical queries
 ├── notebooks/
-│   └── data_cleaning.ipynb          # Pandas preprocessing
+│   └── data_cleaning_netfix.ipynb          # Pandas preprocessing
 ├── images/
-│   ├── query_results/               # Visualization outputs
-│   └── charts/                      # Analysis charts
+│   ├── 1.png               # Visualization outputs
+│   └── 2.png                      # Analysis charts
+|   └── 7.png   
 └── docs/
     └── project_documentation.pdf    # Comprehensive documentation
 ```
