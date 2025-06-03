@@ -42,7 +42,7 @@ This comprehensive project explores Netflix content through advanced SQL analysi
 ### Entity-Relationship Model
 The database follows **Third Normal Form (3NF)** principles to eliminate redundancy and ensure data integrity.
 
-![ER Diagram](er.png)
+![ER Diagram](er_diagram.png)
 *Complete Entity-Relationship diagram showing all table relationships*
 
 ### Core Tables Structure
@@ -123,7 +123,7 @@ FROM SHOWS
 GROUP BY TYPE_ID;
 ```
 
-![Content Type Distribution](1.png)
+![Content Type Distribution](images/1.png)
 
 ---
 
@@ -162,7 +162,7 @@ GROUP BY C.NAME
 ORDER BY NO_OF_SHOWS DESC;
 ```
 
-![Shows by Country](2.png)
+![Shows by Country](images/2.png)
 
 ---
 
@@ -207,7 +207,7 @@ ORDER BY NO_OF_SHOWS DESC
 LIMIT 5;
 ```
 
-![Top 5 Actors](7.png)
+![Top 5 Actors](images/7.png)
 
 ---
 
@@ -650,7 +650,7 @@ ORDER BY
 ## 🔍 Key Insights Discovered
 
 ### Content Distribution
-- **Total Shows**: 8,807 Netflix titles analyzed
+- **Total Shows**: 8,800+ Netflix titles analyzed
 - **Content Split**: Movies dominate the platform with significant TV show presence
 - **Global Reach**: Content spans 100+ countries worldwide
 
@@ -689,38 +689,44 @@ cd netflix-data-analysis-postgresql
 # Create database
 createdb netflix_analysis
 
-# Run table creation scripts
-psql -d netflix_analysis -f sql/create_tables.sql
+#  table creation
+open database_creation file and execute all .
 
 # Import cleaned data
-psql -d netflix_analysis -f sql/insert_data.sql
+ for some tables import data from the cleaned data set given as prescribed in the insertion file .
 ```
 
 3. **Execute Analysis Queries**
 ```bash
 # Run all business queries
-psql -d netflix_analysis -f sql/business_queries.sql
+Now Run all queries and Analyze soultions
 ```
 
 ## 📁 Project Structure
 
 ```
-netflix-data-analysis-postgresql/
+Netflix-Data-Analysis-Using-PostgreSql/
 │
 ├── README.md                          # Project documentation
-├── er.png                            # Entity-Relationship diagram
+├── er_diagram.png                            # Entity-Relationship diagram
 ├── data/
-│   ├── netflix_raw.csv              # Original dataset
+│   ├── netflix_raw_original.csv              # Original dataset
 │   └── netflix_cleaned.csv          # Processed dataset
+|   └──countries.csv                 #cleaned countries dataset
+|   └──casts.csv                     # cleaned cast_members
+|   └──directors.csv                  #cleaned directors  
+|
+|
 ├── sql/
-│   ├── create_tables.sql            # DDL statements
-│   ├── insert_data.sql              # Data import scripts
-│   └── business_queries.sql         # 25 analytical queries
+│   ├── database_creation.sql            # DDL statements
+│   ├── insertion_into_database.sql              # Data import scripts
+│   └── querying_new.sql             # 25 analytical queries
 ├── notebooks/
-│   └── data_cleaning.ipynb          # Pandas preprocessing
+│   └── data_cleaning_netfix.ipynb          # Pandas preprocessing
 ├── images/
-│   ├── query_results/               # Visualization outputs
-│   └── charts/                      # Analysis charts
+│   ├── 1.png               # Visualization outputs
+│   └── 2.png                      # Analysis charts
+|   └── 7.png   
 └── docs/
     └── project_documentation.pdf    # Comprehensive documentation
 ```
@@ -776,13 +782,11 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## 📞 Contact & Connect
 
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Email**: [Your Email]
-- **Portfolio**: [Your Portfolio Website]
+- **LinkedIn**: [https://www.linkedin.com/in/rajesh-chowdary-nimmalapudi-22bbbb317]
+- **Email**: [nimmalapudirajesh466@gmail.com]
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## 🙏 Acknowledgments
 
