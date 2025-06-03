@@ -42,7 +42,7 @@ This comprehensive project explores Netflix content through advanced SQL analysi
 ### Entity-Relationship Model
 The database follows **Third Normal Form (3NF)** principles to eliminate redundancy and ensure data integrity.
 
-![ER Diagram](er.png)
+![ER Diagram](er_diagram.png)
 *Complete Entity-Relationship diagram showing all table relationships*
 
 ### Core Tables Structure
