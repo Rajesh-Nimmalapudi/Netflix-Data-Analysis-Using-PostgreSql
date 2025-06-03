@@ -1,5 +1,5 @@
 # 📊 Netflix Data Analysis Project Using PostgreSQL
-![NETFLIX](images/logo.jpg)
+![NETFLIX](<img src="images/logo.jpg" width="600"/>)
 
 ## 🎯 Project Overview
 
