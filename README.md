@@ -650,7 +650,7 @@ ORDER BY
 ## 🔍 Key Insights Discovered
 
 ### Content Distribution
-- **Total Shows**: 8,807 Netflix titles analyzed
+- **Total Shows**: 8,800+ Netflix titles analyzed
 - **Content Split**: Movies dominate the platform with significant TV show presence
 - **Global Reach**: Content spans 100+ countries worldwide
 
@@ -689,26 +689,26 @@ cd netflix-data-analysis-postgresql
 # Create database
 createdb netflix_analysis
 
-# Run table creation scripts
-psql -d netflix_analysis -f sql/create_tables.sql
+#  table creation
+open database_creation file and execute all .
 
 # Import cleaned data
-psql -d netflix_analysis -f sql/insert_data.sql
+ for some tables import data from the cleaned data set given as prescribed in the insertion file .
 ```
 
 3. **Execute Analysis Queries**
 ```bash
 # Run all business queries
-psql -d netflix_analysis -f sql/business_queries.sql
+Now Run all queries and Analyze soultions
 ```
 
 ## 📁 Project Structure
 
 ```
-netflix-data-analysis-postgresql/
+Netflix-Data-Analysis-Using-PostgreSql/
 │
 ├── README.md                          # Project documentation
-├── er.png                            # Entity-Relationship diagram
+├── er_diagram.png                            # Entity-Relationship diagram
 ├── data/
 │   ├── netflix_raw.csv              # Original dataset
 │   └── netflix_cleaned.csv          # Processed dataset
@@ -776,13 +776,11 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## 📞 Contact & Connect
 
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Email**: [Your Email]
-- **Portfolio**: [Your Portfolio Website]
+- **LinkedIn**: [https://www.linkedin.com/in/rajesh-chowdary-nimmalapudi-22bbbb317]
+- **Email**: [nimmalapudirajesh466@gmail.com]
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## 🙏 Acknowledgments
 
